@@ -9,3 +9,7 @@ stuff near me on my second attempt to I could ask questions. Index is functionin
 tutorial: http://giscollective.org/tutorials/web-mapping/leaflet-1/#comment-4660 which very possibly works if you find the
 really old version the tutorial calls for. Index right now in this repo has a somewhat functioning result of the tutorial 
 using the current leaflet library (as of 8/5/2013). 
+
+Some really solid leaflet.js tutorials are available right on their site: http://leafletjs.com/examples.html
+
+Now gotta get my lazy butt doing some of those...
