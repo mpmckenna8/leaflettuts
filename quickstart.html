@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="text/javascript" src="leaflet/leaflet.js"></script>
+        <link rel="stylesheet" href="leaflet/leaflet.css" />
+        
+    </head>
+	<body>
+        <script type="text/javascript">// <![CDATA[
+			window.onload = function () {
+                
+                var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png';
+                
+                var basemap = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
+                var latlng = new L.LatLng(43.0731, -89.4011);
+                
+                var map = new L.Map('map', {center: latlng, zoom: 15, layers: [basemap]});
+                
+            };
+            
+            
+            // ]]>
+            </script>
+        
+        <!--  
+         Need to add some styling to my map and figure out if I'm going to change all that jam up there in the script. just wanted to kind of start the quickstart tutorial.
+         -->
+        <div id="map"></div>
+		
+		
+	</body>
+</html>
