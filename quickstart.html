@@ -6,12 +6,19 @@
         
     </head>
 	<body>
+
+        
+        <!--  
+         Need to add some styling to my map and figure out if I'm going to change all that jam up there in the script. just wanted to kind of start the quickstart tutorial.
+         -->
+        <div id="map"></div>
+		
         <script type="text/javascript">
 			window.onload = function () {
                 
-            
                 
-                var map = L.map('map').setView([51.505, -0.09], 13);
+                
+                var map = L.map('map').setView([37.7764, -122.417], 13);
                 
                 L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
                             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
@@ -27,12 +34,5 @@
             
             
             </script>
-        
-        <!--  
-         Need to add some styling to my map and figure out if I'm going to change all that jam up there in the script. just wanted to kind of start the quickstart tutorial.
-         -->
-        <div id="map"></div>
-		
-		
 	</body>
 </html>
