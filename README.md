@@ -16,4 +16,5 @@ using the current leaflet library (as of 8/5/2013).
 Some really solid leaflet.js tutorials are available right on their site: <a href="http://leafletjs.com/examples.html">leaflet 
 tutorials.</a>
 
-Now gotta get my lazy butt doing some of those...
+My result of working on the Quickstart Tutorial is the quickstart.html file w/ the leafquick.css files which I'm going to 
+try to push to a github pages branch once I figure out what that means in reality.... I think I'm figuring it out.
