@@ -1,1 +1,4 @@
-#map { height: 300px; }
+.map { 
+    height: 600px;
+    width: 400px;
+}

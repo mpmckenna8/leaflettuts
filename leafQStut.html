@@ -3,7 +3,7 @@
         <script type="text/javascript" src="leaflet/leaflet.js"></script>
         <link rel="stylesheet" href="leaflet/leaflet.css" />
         <link type="text/css" rel="stylesheet" href="leafquickcss.css" />
-        
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
     </head>
 	<body>
         
@@ -11,16 +11,22 @@
         <!--
          Need to add some styling to my map and figure out if I'm going to change all that jam up there in the script. just wanted to kind of start the quickstart tutorial.
          -->
-        <div id="map"></div>
+        <div class="map"></div>
         
         <script type="text/javascript">
 			window.onload = function () {
                 
+                var layer = "terrain";
                 
+                var map = new L.Map(layer, {
+                                    center: new L.LatLng(37.8, -122.4),
+                                    zoom: 10
+                                    });
+                map.addLayer(new L.StamenTileLayer(layer));
                 
-                var map = L.map('map').setView([37.7764, -122.417], 13);
-                
-                L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
+                 };
+                /*
+                ///L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
                             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
                             maxZoom: 18
                             }).addTo(map);
@@ -29,10 +35,10 @@
                 }
                 
                 map.on('click', onMapClick);
-            };
+           
+            */
             
-            
-            
+        
             </script>
 	</body>
 </html>
