@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "id": 1, "Bike Valet": "Giants", "Capacity": 200 }, "geometry": { "type": "Point", "coordinates": [ -122.388882055788812, 37.778022651545839 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "id": 2, "Bike Valet": "America's Cup Marina Green", "Capacity": 100 }, "geometry": { "type": "Point", "coordinates": [ -122.421318975774909, 37.807891490674393 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "id": 3, "Bike Valet": "America's Cup Embarcadero", "Capacity": 100 }, "geometry": { "type": "Point", "coordinates": [ -122.401079973178554, 37.802570191935985 ] } }
+
+]
+}

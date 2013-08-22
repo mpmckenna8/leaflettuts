@@ -9,11 +9,11 @@
         <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
         <script type="text/javascript">
             function initialize() {
-                var layers = ["toner"];
+                var layers = ["terrain"];
               
-                    var layer = "toner";
+                    var layer = "terrain";
                     var map = new L.Map(layer, {
-                                        center: new L.LatLng(37.75, -122.5),
+                                        center: new L.LatLng(37.75, -122.45),
                                         zoom: 12
                                         });
                     map.addLayer(new L.StamenTileLayer(layer));
@@ -29,7 +29,6 @@
             </style>
     </head>
     <body onload="initialize()">
-        <div id="toner" class="map"></div>
         <div id="terrain" class="map"></div>
         <div id="watercolor" class="map"></div>
     </body>
