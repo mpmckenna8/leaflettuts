@@ -1,0 +1,53 @@
+var valetlocation = {
+type: "FeatureCollection",
+features: [
+{
+type: "Feature",
+id: 0,
+properties: {
+id: 1,
+Bike Valet: "Giants",
+Capacity: 200
+},
+geometry: {
+type: "Point",
+coordinates: [
+-122.38888205578881,
+37.77802265154584
+]
+}
+},
+{
+type: "Feature",
+id: 1,
+properties: {
+id: 2,
+Bike Valet: "America's Cup Marina Green",
+Capacity: 100
+},
+geometry: {
+type: "Point",
+coordinates: [
+-122.42131897577491,
+37.80789149067439
+]
+}
+},
+{
+type: "Feature",
+id: 2,
+properties: {
+id: 3,
+Bike Valet: "America's Cup Embarcadero",
+Capacity: 100
+},
+geometry: {
+type: "Point",
+coordinates: [
+-122.40107997317855,
+37.802570191935985
+]
+}
+}
+]
+}
