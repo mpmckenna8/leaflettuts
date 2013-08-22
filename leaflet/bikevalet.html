@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
         
-        <script type="text/javascript" src="../js/tile.stamen.js?v1.2.3"></script>
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
         <script type="text/javascript">
             function initialize() {
                 var layers = ["toner"];
               
-                    var layer = layers[0];
+                    var layer = "toner";
                     var map = new L.Map(layer, {
                                         center: new L.LatLng(37.8, -122.4),
                                         zoom: 10
