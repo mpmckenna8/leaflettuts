@@ -12,6 +12,7 @@
             
     </head>
     <body onload="initialize()">
+        <h1 class="badger">Here be an undraggable Sconnie Dragon</h1>
      
         <div id="watercolor" class="map"></div>
         
@@ -22,10 +23,16 @@
                 
                 var layer = "watercolor";
                 var map = new L.Map(layer, {
-                                    center: new L.LatLng(37.75, -122.45),
-                                    zoom: 12
+                                    center: new L.LatLng(41.03,-95.45),
+                                    zoom: 4
                                     });
                 map.addLayer(new L.StamenTileLayer(layer));
+                var dragon = L.icon({
+                                    iconUrl: 'sconniedragon.png',
+                                    iconSize: [40,50]
+                                    
+                                    });
+                L.marker([43.06, -89.4], {icon: dragon}).addTo(map);
                 
             }
             </script>
