@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Here be Sconnie Dragons</title>
+        <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
+        
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
+
+        <link rel="stylesheet" type="text/css" href="dragon.css" />
+            
+    </head>
+    <body onload="initialize()">
+     
+        <div id="watercolor" class="map"></div>
+        
+        
+        <script type="text/javascript">
+            function initialize() {
+                var layers = ["terrain", "watercolor", "toner"];
+                
+                var layer = "watercolor";
+                var map = new L.Map(layer, {
+                                    center: new L.LatLng(37.75, -122.45),
+                                    zoom: 12
+                                    });
+                map.addLayer(new L.StamenTileLayer(layer));
+                
+            }
+            </script>
+    </body>
+</html>
