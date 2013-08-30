@@ -14,7 +14,7 @@ var valetlocations = {
                  { "type": "Feature", "id": 3, "properties": { "id": 4, "Bike Valet": "Metromint di Giro", "Capacity": 80,
                  "Dates": ["09\/02\/2013"], "Times": "1100-1630" }, "geometry": { "type": "Point", "coordinates": [ -122.401397781663391, 37.802384355311119 ] } }
                  ,
-                 { "type": "Feature", "id": 4, "properties": { "id": 5, "Bike Valet": "JP Morgan Corporate Challenge", "Capacity": 150, "Dates": "09\/03\/2013", "Times": "1700-2230" }, "geometry": { "type": "Point", "coordinates": [ -122.388659372905778, 37.774641900381418 ] } }
+                 { "type": "Feature", "id": 4, "properties": { "id": 5, "Bike Valet": "JP Morgan Corporate Challenge", "Capacity": 150, "Dates": ["09\/03\/2013"], "Times": "1700-2230" }, "geometry": { "type": "Point", "coordinates": [ -122.388659372905778, 37.774641900381418 ] } }
                  
                  ]
 }

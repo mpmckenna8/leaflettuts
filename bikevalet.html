@@ -46,7 +46,12 @@
                           return L.marker(latlng, {icon: valeticon});
                           },
                         
-                          }).addTo(map);
+                          }).addTo(map).bindPopup("<p>Come Park your bike on need to figure out how to get right date from json array.</p>");
+                function onMapClick(e) {
+                    alert("You clicked the map at " + e.latlng);
+                }
+                
+                map.on('click', onMapClick);
                 
             }
             
