@@ -20,15 +20,7 @@
         <div id="terrain" class="map"></div>
         <div id="watercolor" class="map"></div>
         
-        <script src="sfbikevalet-geojson.js" type="text/javascript"></script>
         <script type="text/javascript">
-            var valeticon = L.icon({
-                                   iconUrl :'bikeparking.svg',
-                                   iconSize: [32,37],
-                                   iconAnchor: [0,0],
-                                   popupAnchor: [0, 0]
-                                   });
-            
             function initialize() {
                 var layers = ["terrain"];
                 
@@ -38,19 +30,8 @@
                                     zoom: 12
                                     });
                 map.addLayer(new L.StamenTileLayer(layer));
-               
-
-                L.geoJson(valetlocations, {
-                          
-                          pointToLayer: function (feature, latlng){
-                          return L.marker(latlng, {icon: valeticon});
-                          },
-                        
-                          }).addTo(map);
                 
             }
-            
-            
             </script>
     </body>
 </html>
