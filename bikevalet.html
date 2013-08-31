@@ -7,45 +7,52 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
         
         <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
-
+        
         <style type="text/css">
             .map {
                 width: 700px;
-                height: 750px;
+                height: 600px;
                 margin: 0 0 1em 0;
             }
             </style>
     </head>
     <body onload="initialize()">
-        <div id="terrain" class="map"></div>
-        <div id="watercolor" class="map"></div>
+        <h1>San Francisco Bicycle Valet Map</h1>
+        <div id="toner" class="map"></div>
+       <!-- <div id="watercolor" class="map"></div>  -->
+        
+        <p>So far I'm just working on a doing San Francisco Bicycle Coalition bike valet events on the map. Have the data for the map in geoJSON with all the dates in an array. Was gonna work on having popus with dynamic text according the the date and time. Still need a good system for adding new data to the set. Though just creating a new feature really isn't too time consuming for now and I can edit the raw data...</p>
+        <p>
+        Back to <a href="http://mpmckenna8.github.io/">my vanity site</a>
+        </p>
+
         
         <script src="sfbikevalet-geojson.js" type="text/javascript"></script>
         <script type="text/javascript">
             var valeticon = L.icon({
-                                   iconUrl :'bikeparking.svg',
+                                   iconUrl :'SFbikeValet-mapicon.png',
                                    iconSize: [32,37],
                                    iconAnchor: [0,0],
                                    popupAnchor: [0, 0]
                                    });
             
             function initialize() {
-                var layers = ["terrain"];
+                var layers = ["toner"];
                 
-                var layer = "terrain";
+                var layer = "toner";
                 var map = new L.Map(layer, {
                                     center: new L.LatLng(37.75, -122.45),
                                     zoom: 12
                                     });
                 map.addLayer(new L.StamenTileLayer(layer));
-               
-
+                
+                
                 L.geoJson(valetlocations, {
                           
                           pointToLayer: function (feature, latlng){
                           return L.marker(latlng, {icon: valeticon});
                           },
-                        
+                          
                           }).addTo(map).bindPopup("<p>Come Park your bike on need to figure out how to get right date from json array.</p>");
                 function onMapClick(e) {
                     alert("You clicked the map at " + e.latlng);
