@@ -50,10 +50,13 @@
                 
                 function onEachFeature(feature, layer) {
                     // does this feature have a property named popupContent?
+                   
                     if (feature.properties && feature.properties.Dates[0]) {
+                      var popUP = [];
                         for(i=0; i<feature.properties.Dates.length; i++){
-                        layer.bindPopup("<p>Come Park your bike on need to figure out how to get right dates from json array.</p>" + feature.properties.Dates[i]);
+                            popUP[i] = feature.properties.Dates[i];
                         }
+                            layer.bindPopup("<p>Come Park your bike on need to figure out how to get right dates from json array.</p>" + String(popUP));
                     }
                 }
                 
