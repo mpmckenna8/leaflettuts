@@ -7,21 +7,15 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
         
         <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
+        <link rel="stylesheet" href="valetstyle.css" />
         
-        <style type="text/css">
-            .map {
-                width: 700px;
-                height: 600px;
-                margin: 0 0 1em 0;
-            }
-            </style>
     </head>
     <body onload="initialize()">
-        <h1>San Francisco Bicycle Valet Map</h1>
+        <h1 class="header">San Francisco Bicycle Valet Map</h1>
         <div id="toner" class="map"></div>
        <!-- <div id="watercolor" class="map"></div>  -->
         
-        <p>So far I'm just working on a doing San Francisco Bicycle Coalition bike valet events on the map. Have the data for the map in geoJSON with all the dates in an array. Was gonna work on having popup dialogues with dynamic text according the the date and time. Still need a good system for adding new data to the set. Though just creating a new feature really isn't too time consuming for now and I can edit the raw data... <br>
+        <p>So far I'm just working on a doing <a href="http://www.sfbike.org/?valet">San Francisco Bicycle Coalition bike valet</a> events on the map. Have the data for the map in geoJSON with all the dates in an array. Was gonna work on having popup dialogues with dynamic text according the the date and time. Still need a good system for adding new data to the set. Though just creating a new feature really isn't too time consuming for now and I can edit the raw data... <br>
             To make it easier to reposition stuff I made it so you can click to get the coordinates too.
         </p>
         <p>

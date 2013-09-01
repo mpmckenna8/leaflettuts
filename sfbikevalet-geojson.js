@@ -3,7 +3,7 @@ var valetlocations = {
     
     "features": [
                  { "type": "Feature", "id": 0, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
-                 "Dates": ["23\/8\/2013", "05\/09\/2013", "06\/09\/2013"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38665, 37.77936 ] } }
+                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem.", "23\/8\/2013", "05\/09\/2013", "06\/09\/2013"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38665, 37.77936 ] } }
                  ,
                  { "type": "Feature", "id": 1, "properties": { "id": 2, "Bike_Valet": "America's Cup Marina Green",
                  "Capacity": 100, "Dates": ["01\/09\/2013", "02\/09\/2013", "03\/09\/2013", "04\/09\/2013"], "Times": ["1000-1900"] }, "geometry": { "type": "Point", "coordinates": [ -122.43507, 37.80633  ] } }
