@@ -6,10 +6,10 @@ var valetlocations = {
                  "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem.", "23\/8\/2013", "05\/09\/2013", "06\/09\/2013"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38665, 37.77936 ] } }
                  ,
                  { "type": "Feature", "id": 1, "properties": { "id": 2, "Bike_Valet": "America's Cup Marina Green",
-                 "Capacity": 100, "Dates": ["01\/09\/2013", "02\/09\/2013", "03\/09\/2013", "04\/09\/2013"], "Times": ["1000-1900"] }, "geometry": { "type": "Point", "coordinates": [ -122.43507, 37.80633  ] } }
+                 "Capacity": 100, "Dates": ["10 AM - 7PM 01\/09\/2013", " 02\/09\/2013", " 03\/09\/2013", " 04\/09\/2013"], "Times": ["1000-1900"] }, "geometry": { "type": "Point", "coordinates": [ -122.43507, 37.80633  ] } }
                  ,
-                 { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero", "Capacity": 100,
-                 "Dates": ["01\/09\/2013", "02\/09\/2013", "03\/09\/2013", "04\/09\/2013"], "Times": "1000-1900" }, "geometry": { "type": "Point", "coordinates": [ -122.399621550709114, 37.804334682534055 ] } }
+                 { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero- Pier 23", "Capacity": 100,
+                 "Dates": ["10 AM - 7PM 01\/09\/2013", "02\/09\/2013", "03\/09\/2013", "04\/09\/2013"], "Times": "1000-1900" }, "geometry": { "type": "Point", "coordinates": [ -122.399621550709114, 37.804334682534055 ] } }
                  ,
                  { "type": "Feature", "id": 3, "properties": { "id": 4, "Bike_Valet": "Metromint di Giro", "Capacity": 80,
                  "Dates": ["09\/02\/2013"], "Times": "1100-1630" }, "geometry": { "type": "Point", "coordinates": [ -122.401397781663391, 37.802384355311119 ] } }
