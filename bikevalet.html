@@ -14,9 +14,11 @@
         <h1 class="header">San Francisco Bicycle Valet Map</h1>
         <div id="toner" class="map"></div>
        <!-- <div id="watercolor" class="map"></div>  -->
+       
+       <button type="button" onclick="">
         
-        <p>So far I'm just working on a doing <a href="http://www.sfbike.org/?valet">San Francisco Bicycle Coalition bike valet</a> events on the map. Have the data for the map in geoJSON with all the dates in an array. Was gonna work on having popup dialogues with dynamic text according the the date and time. Still need a good system for adding new data to the set. Though just creating a new feature really isn't too time consuming for now and I can edit the raw data... <br/>
-            To make it easier to reposition stuff I made it so you can click the map to get the coordinates too.
+        <p>So far I'm just working on a doing <a href="http://www.sfbike.org/?valet">San Francisco Bicycle Coalition bike valet</a> events on the map. Have the data for the map in geoJSON with all the dates in an array. Was gonna work on having popup dialogues with dynamic text according the the date and time. Still need a good system for adding new data to the set. Though just creating a new feature really isn't too time consuming for now and I can edit the raw data...</p>
+            <p>To make it easier to reposition stuff I made it so you can click the map to get the coordinates too.
         </p>
         <p>Also check out the <a href="http://www.sfbike.org/?chain">San Francisco Bicycle Coalition's chain of events</a> which lists a bunch of SF's bike happenings, though there are plenty not on there.'</p>
         <p>
@@ -25,54 +27,6 @@
 
         
         <script src="sfbikevalet-geojson.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            var valeticon = L.icon({
-                                   iconUrl :'SFbikeValet-mapicon.png',
-                                   iconSize: [32,37],
-                                   iconAnchor: [0,0],
-                                   popupAnchor: [0, 0]
-                                   });
-            
-            function initialize() {
-                var layers = ["toner"];
-                
-                var layer = "toner";
-                var map = new L.Map(layer, {
-                                    center: new L.LatLng(37.75, -122.45),
-                                    zoom: 12
-                                    });
-                map.addLayer(new L.StamenTileLayer(layer));
-                
-                function onEachFeature(feature, layer) {
-                    // does this feature have a property named popupContent?
-                   
-                    if (feature.properties && feature.properties.Dates[0]) {
-                      var popUP = [];
-                        for(i=0; i<feature.properties.Dates.length; i++){
-                            popUP[i] = feature.properties.Dates[i];
-                        }
-                           layer.bindPopup("<h4>" + feature.properties.Bike_Valet +"</h4><p>Come Park your bike on: </p>" + String(popUP));
-                    }
-                }
-                
-                L.geoJson(valetlocations, {
-                        
-                          pointToLayer: function (feature, latlng){
-                          return L.marker(latlng, {icon: valeticon});
-                          },
-                           onEachFeature: onEachFeature
-                          }).addTo(map)
-                //The popup I had the easyn non-dynamic way.
-                ///.bindPopup("<p>Come Park your bike on need to figure out how to get right date from json array.</p>");
-                function onMapClick(e) {
-                    alert("You clicked the map at " + e.latlng);
-                }
-                
-                map.on('click', onMapClick);
-                
-            }
-            
-            
-            </script>
+        <script type="text/javascript" src="sfbikevalet.js"></script>
     </body>
 </html>
