@@ -5,7 +5,7 @@
                popupAnchor: [0, 0]
             	});
   
-  function initialize() {
+  
             var layers = ["toner"];
                 
             var layer = "toner";
@@ -34,9 +34,8 @@
                           },
                            onEachFeature: onEachFeature
                           }).addTo(map);
-            
-            }               
+                    
             function centermap(){
-                	
+            	        map.setView([37.75, -122.45], 12)
                 }
             
