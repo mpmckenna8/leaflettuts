@@ -5,7 +5,7 @@
                                    popupAnchor: [0, 0]
                                    });
             
-            function initialize() {
+       
                 var layers = ["toner"];
                 
                 var layer = "toner";
@@ -39,9 +39,13 @@
                 function onMapClick(e) {
                     alert("You clicked the map at " + e.latlng);
                 }
+ 
                 
                 map.on('click', onMapClick);
-                
-            }
-            
-            
+               
+             function centermap(){
+                // guess initialize() don't work for this one so gonna have to figure out how to do this w/ leaflet...	
+        
+              map.panTo([37.75, -122.45])
+                }   
+         
