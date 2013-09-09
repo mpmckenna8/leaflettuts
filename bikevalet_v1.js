@@ -38,4 +38,10 @@
             function centermap(){
             	        map.setView([37.75, -122.45], 12)
                 }
+            function giantsvalet(){
+               map.setView([37.77796, -122.38885], 17)
+               }
+         	function tourdefat(){
+         	map.setView([ 37.77056, -122.48955 ], 16)
+         		}
             

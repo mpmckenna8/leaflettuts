@@ -14,3 +14,7 @@
 p {
     text-align:left;
 }
+
+.buttons {
+	position:float;
+}
