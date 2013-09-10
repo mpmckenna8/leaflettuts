@@ -1,9 +1,13 @@
+body{
+	z-index:1;
+	}
+
 .map {
-                width: 700px;
-                height: 600px;
-                margin-right: auto;
-                margin-left: auto;
-        
+        width: 700px;
+         height: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        z-index:0;
             }
 .header{
     text-align:center;
@@ -16,5 +20,6 @@ p {
 }
 
 .buttons {
-	position:float;
+	position:absolute;
+	z-index:2;
 }
