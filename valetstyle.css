@@ -23,3 +23,9 @@ p {
 	position:absolute;
 	z-index:2;
 }
+
+button{
+	margin-top:5px;
+	margin-bottom:10px;
+		
+}

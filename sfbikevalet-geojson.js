@@ -21,9 +21,9 @@ var valetlocations = {
                 { "type": "Feature", "id": 5, "properties": { "id": 5, "Bike_Valet": "Opera in the Park", "Capacity": 200, "Dates": ["09\/08\/2013"], "Times": "0900-1630" }, "geometry": { "type": "Point", "coordinates": [ -122.45809, 37.76909 ] } }
                  
                  ,  */
-                 { "type": "Feature", "id": 6, "properties": { "id": 5, "Bike_Valet": "Tour de Fat", "Capacity": 1000, "Dates": ["09\/21\/2013"], "Times": "1000-1700" }, "geometry": { "type": "Point", "coordinates": [ -122.48955, 37.77056 ] } }
-                 
-                 
+                 { "type": "Feature", "id": 6, "properties": { "id": 5, "Bike_Valet": "Tour de Fat", "Capacity": 1000, "Dates": ["09\/21\/2013"], "Times": "1000-1700" }, "geometry": { "type": "Point", "coordinates": [ -122.48752, 37.76915 ] } }
+                 ,
+                 { "type": "Feature", "id": 7, "properties": { "id": 5, "Bike_Valet": "Dept of Environment Reception", "Capacity": 55, "Dates": ["09\/12\/2013"], "Times": "1000-1700" }, "geometry": { "type": "Point", "coordinates": [  -122.41799, 37.7756] } }
                  ]
 }
 
