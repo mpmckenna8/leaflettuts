@@ -11,16 +11,18 @@
         
     </head>
     <body>
+ 
         <h1 class="header">San Francisco Bicycle Valet Map</h1>
-        <div id="toner" class="map"></div>
-       <!-- <div id="watercolor" class="map"></div>  -->
-       
+           <div class="buttons">       
        <button type="button" onclick="centermap()">Center on SF mainland</button>
        </br> 
     	<button type="button" onclick="giantsvalet()">Giants Valet</button>
        </br>
        <button type="button" onclick="tourdefat()">Tour de Fat</button>
-        
+        </div>
+        <div id="toner" class="map"></div>
+       <!-- <div id="watercolor" class="map"></div>  -->
+
         <p>So far I'm just working on a doing <a href="http://www.sfbike.org/?valet">San Francisco Bicycle Coalition bike valet</a> events on the map. Have the data for the map in geoJSON with all the dates in an array. Was gonna work on having popup dialogues with dynamic text according the the date and time. Still need a good system for adding new data to the set. Though just creating a new feature really isn't too time consuming for now and I can edit the raw data...</p>
             
         <p>Also check out the <a href="http://www.sfbike.org/?chain">San Francisco Bicycle Coalition's chain of events</a> which lists a bunch of SF's bike happenings, though there are plenty not on there.'</p>

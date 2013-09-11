@@ -1,7 +1,7 @@
         var valeticon = L.icon({
             iconUrl :'SFbikeValet-mapicon.png',
             iconSize: [32,37],
-           	iconAnchor: [0,0],
+           	iconAnchor: [16,18],
             popupAnchor: [0, 0]
             	});
   

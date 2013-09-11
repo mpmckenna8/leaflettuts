@@ -1,7 +1,7 @@
             var valeticon = L.icon({
                                    iconUrl :'SFbikeValet-mapicon.png',
                                    iconSize: [32,37],
-                                   iconAnchor: [0,0],
+                                   iconAnchor: [15,18],
                                    popupAnchor: [0, 0]
                                    });
             
@@ -49,9 +49,9 @@
               
                 }   
                 
-               function giantsvalet(){
+            function giantsvalet(){
                map.setView([37.77796, -122.38885], 17)
                }
          	function tourdefat(){
          	map.setView([ 37.77056, -122.48955 ], 16)
-         	}
+         		}
