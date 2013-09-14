@@ -1,11 +1,14 @@
-            var valeticon = L.icon({
-                                   iconUrl :'SFbikeValet-mapicon.png',
+            var valeticon = L.Icon.extend({
+            	options: {
                                    iconSize: [32,37],
                                    iconAnchor: [15,18],
                                    popupAnchor: [0, 0]
+                                   }
                                    });
-            
-       
+            var sfbikeicon = new valeticon({iconUrl :'SFbikeValet-mapicon.png'})
+       		var wPicon = new valeticon({iconUrl :'bikeparking.svg' })
+       			
+       		
                 var layers = ["toner"];
                 
                 var layer = "toner";
@@ -30,7 +33,7 @@
                 L.geoJson(valetlocations, {
                         
                           pointToLayer: function (feature, latlng){
-                          return L.marker(latlng, {icon: valeticon});
+                          return L.marker(latlng, {icon: sfbikeicon});
                           },
                            onEachFeature: onEachFeature
                           }).addTo(map)
