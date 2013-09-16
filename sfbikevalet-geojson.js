@@ -26,6 +26,8 @@ var valetlocations = {
                  /*
                  { "type": "Feature", "id": 7, "properties": { "id": 5, "Bike_Valet": "Dept of Environment Reception", "Capacity": 55, "Dates": ["09\/12\/2013"], "Times": "1000-1700" }, "geometry": { "type": "Point", "coordinates": [  -122.41799, 37.7756] } }
                   */
+                                   { "type": "Feature", "id": 8, "properties": { "id": 8, "Bike_Valet": "Sunday Streets Five Year Party", "Capacity": 1000, "Dates": ["09\/17\/2013"], "Times": "Maybe 1800-2200" }, "geometry": { "type": "Point", "coordinates": [  -122.404, 37.78401 ] } }
+                 ,
                  ]
 }
 
