@@ -33,7 +33,11 @@
                 L.geoJson(valetlocations, {
                         
                           pointToLayer: function (feature, latlng){
-                          return L.marker(latlng, {icon: sfbikeicon});
+                          if(feature.properties.id<100){
+                          return L.marker(latlng, {icon: sfbikeicon});}
+                          else{
+                          	return L.marker(latlng, {icon: wPicon});
+                          }
                           },
                            onEachFeature: onEachFeature
                           }).addTo(map)
