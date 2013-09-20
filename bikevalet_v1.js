@@ -1,12 +1,12 @@
-        var valeticon = L.icon({
-            iconUrl :'SFbikeValet-mapicon.png',
-            iconSize: [32,37],
-           	iconAnchor: [16,18.5],
-            popupAnchor: [0, 0]
-            	});
-  
-  
-            var layers = ["toner"];
+        var valeticon = L.Icon.extend({
+            	options: {
+                                   iconSize: [32,37],
+                                   iconAnchor: [15,18.5],
+                                   popupAnchor: [0, 0]
+                                   }
+                                   });
+            var sfbikeicon = new valeticon({iconUrl :'SFbikeValet-mapicon.png'})
+       		var wPicon = new valeticon({iconUrl :'bikeparking.svg' })
                 
             var layer = "toner";
             var map = new L.Map(layer, {
@@ -27,13 +27,17 @@
                     }
                 }
                 
-                L.geoJson(valetlocations, {
+            L.geoJson(valetlocations, {
                         
-                          pointToLayer: function (feature, latlng){
-                          return L.marker(latlng, {icon: valeticon});
+                    pointToLayer: function (feature, latlng){
+                    if(feature.properties.id<100){
+                    return L.marker(latlng, {icon: sfbikeicon});}
+                    else{
+                    return L.marker(latlng, {icon: wPicon});
+                          }
                           },
                            onEachFeature: onEachFeature
-                          }).addTo(map);
+                          }).addTo(map)
                     
             function centermap(){
             	        map.setView([37.75, -122.45], 12)

@@ -8,11 +8,13 @@ body{
         margin-right: auto;
         margin-left: auto;
         z-index:0;
+        box-shadow: 0 0 5em gold;
             }
 .header{
     text-align:center;
     margin-right: auto;
     margin-left: auto;
+    font-family: Raleway;
 }
 
 p {
@@ -22,10 +24,11 @@ p {
 .buttons {
 	position:absolute;
 	z-index:2;
+	
 }
 
 button{
 	margin-top:5px;
 	margin-bottom:10px;
-		
+	width:140px;	
 }
