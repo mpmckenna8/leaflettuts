@@ -30,6 +30,11 @@ var valetlocations = {
                  
                                    { "type": "Feature", "id": 8, "properties": { "id": 8, "Bike_Valet": "Sunday Streets Five Year Anniversary Party", "Capacity": 100, "Dates": ["09\/17\/2013"], "Times": "Maybe 1800-2200" }, "geometry": { "type": "Point", "coordinates": [  -122.40538, 37.78306 ] } }
                  , */
+                 { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Bike+Design", "Capacity": 100, "Dates": ["09\/27\/2013 7-10 pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.40492, 37.77781 ] } }
+                 ,                 
+                 
+                 
+                 
                  { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7-8:05 am, maybe not on some holidays."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }
                  ,
                  ]
