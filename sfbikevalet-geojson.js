@@ -39,7 +39,7 @@ var valetlocations = {
                  ,                   
                                   { "type": "Feature", "id": 12, "properties": { "id": 12, "Bike_Valet": "Now and Zen", "Capacity": 100, "Dates": ["09\/29\/2013 10am - 6pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.45741, 37.76998 ] } }
                  ,
-         { "type": "Feature", "id": 13, "properties": { "id": 13, "Bike_Valet": "RoadWorks", "Capacity": 100, "Dates": ["09\/29\/2013 10:30am - 4:30pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.40244, 37.76538 ] } }          
+         { "type": "Feature", "id": 15, "properties": { "id": 15, "Bike_Valet": "RoadWorks", "Capacity": 100, "Dates": ["09\/29\/2013 10:30am - 4:30pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.40244, 37.76538 ] } }          
                  ,
                  
                  { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7-8:05 am, maybe not on some holidays."], "Times": ["7 am if someone needs them to wait for their bike!", ["5oclock","7oclock"]] }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }

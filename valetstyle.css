@@ -32,3 +32,10 @@ button{
 	margin-bottom:10px;
 	width:140px;	
 }
+
+@media screen and (max-width:850px){
+.buttons{
+	z-index:0;
+	position:static;
+	}
+}
