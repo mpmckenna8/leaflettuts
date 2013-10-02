@@ -3,12 +3,14 @@ body{
 	}
 
 .map {
+		 position:relative;
         width: 700px;
          height: 600px;
         margin-right: auto;
         margin-left: auto;
         z-index:0;
         box-shadow: 0 0 5em gold;
+       
             }
 .header{
     text-align:center;
@@ -22,7 +24,7 @@ p {
 }
 
 .buttons {
-	position:absolute;
+	position:fixed;
 	z-index:2;
 	
 }
@@ -35,7 +37,12 @@ button{
 
 @media screen and (max-width:850px){
 .buttons{
-	z-index:0;
-	position:static;
+	z-index:2;
+	position:fixed;
+	
 	}
+.map{
+	z-index:1;
+	position:absolute;
+}
 }
