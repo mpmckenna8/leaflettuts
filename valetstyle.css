@@ -10,6 +10,7 @@ body{
         margin-left: auto;
         z-index:0;
         box-shadow: 0 0 5em gold;
+        
        
             }
 .header{
@@ -24,9 +25,11 @@ p {
 }
 
 .buttons {
-	position:fixed;
+	position:relative;
 	z-index:2;
-	
+	float:left;
+	margin-right:10px;
+
 }
 
 button{
@@ -35,14 +38,41 @@ button{
 	width:140px;	
 }
 
-@media screen and (max-width:850px){
+content {
+	clear:both;
+}
+
+.mapmov {
+	
+}
+
+@media screen and (max-width:900px){
+
+button{
+	margin-top:15px;
+}
 .buttons{
-	z-index:2;
-	position:fixed;
+	z-index:3;
+	margin-top:15px;
+	float:left;
+	margin-top:600px;
+	
 	
 	}
+
+.buttons br {
+	display:none;
+	
+}
+
 .map{
 	z-index:1;
 	position:absolute;
+}
+
+.writin {
+	position:inherit;
+	clear:both;
+	z-index:1;
 }
 }
