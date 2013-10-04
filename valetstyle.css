@@ -68,6 +68,8 @@ button{
 .map{
 	z-index:1;
 	position:absolute;
+	margin-left:4%;
+
 }
 
 .writin {
