@@ -43,7 +43,10 @@ var valetlocations = {
                  ,
                  
                  { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7-8:05 am, maybe not on some holidays."], "Times": ["7 am if someone needs them to wait for their bike!", ["5oclock","7oclock"]] }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }
+                 
                  ,
+                                                    { "type": "Feature", "id": 16, "properties": { "id": 16, "Bike_Valet": "Winter Fest", "Capacity": 100, "Dates": ["11\/3\/2013"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.40538, 37.78306 ] } }
+                 , 
                  
                  ]
 }
