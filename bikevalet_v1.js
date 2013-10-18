@@ -45,7 +45,7 @@
             function giantsvalet(){
                map.setView([37.77796, -122.38885], 17)
                }
-         	function tourdefat(){
-         	map.setView([ 37.77056, -122.48955 ], 16)
+         	function winterfest(){
+         	map.setView([ 37.78306, -122.40538 ], 16)
          		}
             
