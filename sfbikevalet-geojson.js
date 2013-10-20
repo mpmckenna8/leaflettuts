@@ -3,7 +3,7 @@ var valetlocations = {
     
     "features": [
                  { "type": "Feature", "id": 0, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
-                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem.", "23\/8\/2013", "05\/09\/2013", "06\/09\/2013"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
+                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Events coming up: ", "UCSF Discovery Day: 11\/2\/2013 10:30 am- 5 pm"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
                  ,
 
                  { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero- Pier 23", "Capacity": 100,
