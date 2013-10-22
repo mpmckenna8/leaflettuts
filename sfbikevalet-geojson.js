@@ -3,7 +3,7 @@ var valetlocations = {
     
     "features": [
                  { "type": "Feature", "id": 0, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
-                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Events coming up: ", "UCSF Discovery Day: 11\/2\/2013 10:30 am- 5 pm"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
+                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Events coming up: ", "UCSF Discovery Day: 11\/2\/2013 10:30 am-5 pm"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
                  ,
 
                  { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero- Pier 23", "Capacity": 100,
@@ -42,12 +42,12 @@ var valetlocations = {
          { "type": "Feature", "id": 15, "properties": { "id": 15, "Bike_Valet": "RoadWorks", "Capacity": 100, "Dates": ["09\/29\/2013 10:30am - 4:30pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.40244, 37.76538 ] } }          
                  ,
                  
-                 { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7-8:05 am, maybe not on some holidays."], "Times": ["7 am if someone needs them to wait for their bike!", ["5oclock","7oclock"]] }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }
+                 { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7-8:05 pm, maybe not on some holidays."], "Times": ["7 am if someone needs them to wait for their bike!", ["5oclock","7oclock"]] }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }
                  
                  ,
                                                     { "type": "Feature", "id": 16, "properties": { "id": 16, "Bike_Valet": "Winter Fest", "Capacity": 100, "Dates": ["11\/3\/2013"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.40538, 37.78306 ] } }
                  , 
-                 
+        { "type": "Feature", "id": 17, "properties": { "id": 17, "Bike_Valet": "Crissy Field Broadcast", "Capacity": 100, "Dates": ["Sat 10\/26\/2013 9 am - 6 pm", "Sun 10\/26\/2013 11 am - 2 pm"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.46576, 37.803 ] } }
                  ]
 }
 
