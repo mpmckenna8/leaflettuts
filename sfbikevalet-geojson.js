@@ -3,7 +3,7 @@ var valetlocations = {
     
     "features": [
                  { "type": "Feature", "id": 0, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
-                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Events coming up: ", "UCSF Discovery Day: 11\/2\/2013 10:30 am-5 pm"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
+                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Events coming up: ", " UCSF Discovery Day: 11\/2\/2013 10:30 am-5 pm", " Snowbomb Ski Festival: Sat 11\/09\/2013 and Sun 11\/10\/2013"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
                  ,
 
                  { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero- Pier 23", "Capacity": 100,
@@ -47,7 +47,9 @@ var valetlocations = {
                  ,
                                                     { "type": "Feature", "id": 16, "properties": { "id": 16, "Bike_Valet": "Winter Fest", "Capacity": 100, "Dates": ["11\/3\/2013"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.40538, 37.78306 ] } }
                  , 
-        { "type": "Feature", "id": 17, "properties": { "id": 17, "Bike_Valet": "Crissy Field Broadcast", "Capacity": 100, "Dates": ["Sat 10\/26\/2013 9 am - 6 pm", "Sun 10\/26\/2013 11 am - 2 pm"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.46576, 37.803 ] } }
+        { "type": "Feature", "id": 17, "properties": { "id": 17, "Bike_Valet": "Crissy Field Broadcast", "Capacity": 100, "Dates": ["Sat 10\/26\/2013 9 am - 6 pm, ", "Sun 10\/26\/2013 11 am - 2 pm"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.46576, 37.803 ] } }
+                         , 
+        { "type": "Feature", "id": 17, "properties": { "id": 17, "Bike_Valet": "US Half Marathon", "Capacity": 100, "Dates": ["Sun 11\/03\/2013 6 am - 10:30 am"], "Times": "Maybe 0600-1030" }, "geometry": { "type": "Point", "coordinates": [  -122.42126, 37.80761 ] } }
                  ]
 }
 
