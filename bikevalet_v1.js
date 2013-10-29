@@ -48,4 +48,8 @@
          	function winterfest(){
          	map.setView([ 37.78306, -122.40538 ], 16)
          		}
+         	 function warmPlanet(){
+         	map.setView([  37.77451, -122.39757 ], 16)
+         	
+         		}
             
