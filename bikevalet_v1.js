@@ -27,7 +27,7 @@
                     }
                 }
                 
-            L.geoJson(valetlocations, {
+            var geojson = L.geoJson(valetlocations, {
                         
                     pointToLayer: function (feature, latlng){
                     if(feature.properties.id<100){
@@ -38,6 +38,8 @@
                           },
                            onEachFeature: onEachFeature
                           }).addTo(map)
+                          
+            //where I want to rock my new way to do links to events from http://projects.bryanmcbride.com/leaflet/geojson_hacks.html#
                     
             function centermap(){
             	        map.setView([37.75, -122.45], 12)
@@ -49,7 +51,6 @@
          	map.setView([ 37.78306, -122.40538 ], 16)
          		}
          	 function warmPlanet(){
-         	map.setView([  37.77451, -122.39757 ], 16)
-         	
+         	map.setView([  37.77451, -122.39757 ], 16).click(LatLng[  37.77451, -122.39757 ])
          		}
             
