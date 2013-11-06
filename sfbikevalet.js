@@ -1,25 +1,22 @@
-            var valeticon = L.Icon.extend({
+                    var valeticon = L.Icon.extend({
             	options: {
                                    iconSize: [32,37],
-                                   iconAnchor: [15,18],
+                                   iconAnchor: [15,18.5],
                                    popupAnchor: [0, 0]
                                    }
                                    });
             var sfbikeicon = new valeticon({iconUrl :'SFbikeValet-mapicon.png'})
        		var wPicon = new valeticon({iconUrl :'bikeparking.svg' })
-       			
-       		
-                var layers = ["toner"];
                 
-                var layer = "toner";
-                var map = new L.Map(layer, {
-                                    center: new L.LatLng(37.75, -122.45),
-                                    zoom: 12
-                                    });
-                map.addLayer(new L.StamenTileLayer(layer));
+            var layer = "toner";
+            var map = new L.Map(layer, {
+    	            center: new L.LatLng(37.75, -122.45),
+                     zoom: 12
+                                        });
+                
+            map.addLayer(new L.StamenTileLayer(layer));
                 
                 function onEachFeature(feature, layer) {
-                    // does this feature have a property named popupContent(changed to popUP or dates?)?
                    
                     if (feature.properties && feature.properties.Dates[0]) {
                       var popUP = [];
@@ -30,41 +27,50 @@
                     }
                 }
                 
-              L.geoJson(valetlocations, {
+            var geojson = L.geoJson(valetlocations, {
                         
-                          pointToLayer: function (feature, latlng){
-                          if(feature.properties.id<100){
-                          return L.marker(latlng, {icon: sfbikeicon});}
-                          else{
-                          	return L.marker(latlng, {icon: wPicon});
+                    pointToLayer: function (feature, latlng){
+                    if(feature.properties.id<100){
+                    return L.marker(latlng, {icon: sfbikeicon});}
+                    else{
+                    return L.marker(latlng, {icon: wPicon});
                           }
                           },
                            onEachFeature: onEachFeature
                           }).addTo(map)
-                //The popup I had the easy way.
-                ///.bindPopup("<p>Come Park your bike on need to figure out how to get right date from json array.</p>");
-                function onMapClick(e) {
-                    alert("You clicked the map at " + e.latlng);
-                }
- 
-                
-                map.on('click', onMapClick);
-                
-                
-                // Loop through the geojson features and extract bbox and name, then add the options to the "zoom" select and build autocomplete(using jquery) 
-      /*
-      	var options = '<option value="Select a Feature">Select a Feature</option>';
-      	var features = [];
-		geojson.eachLayer(function (layer) {
+                          
+                linky = []
+                var options = '<option value="Select a Feature">Select a Feature</option>';
+                geojson.eachLayer(function (layer) {
 		    var id = layer._leaflet_id;
-			var name = layer.feature.properties.NAME;
-			var coords = layer.feature.geometry.coordinates;
+		    var name = layer.feature.properties.Bike_Valet;
+		    var coords = layer.feature.geometry.coordinates;
 			var lng = layer.feature.geometry.coordinates[0];
 			var lat = layer.feature.geometry.coordinates[1];
-			console.log(features);
-                
-                }
-        */       
+			
+			linky.push({id: id, label: name, value: name, lat: lat, lng: lng});
+		    
+		    console.log(coords);
+		    
+
+		   
+		    $("#featurelist table").append('<tr><td><a href="#" onclick="map._layers['+id+'].openPopup(); map.setView(['+lat+', '+lng+'], 16); return false;">'+name+'</a></td></tr>');
+			// Add features to zoom dropdown
+			options += '<option value="' + lng + "," + lat + '", id="' + id + '">' + name + '</option>';
+		});
+      	$("#zoom").html(options);
+      	
+      	// Function call by "zoom" dropdown onSelect
+		function zoomToFeature (state, coords, id) {
+			if (state === "Select a Feature") {
+				map.fitBounds(geojson.getBounds());
+			}
+			else {
+				lnglat = coords.split(",");
+				map.setView([lnglat[1], lnglat[0]],16);
+				map._layers[id].openPopup();
+			};
+		}
              function centermap(){
                
               map.setView([37.75, -122.45], 12)

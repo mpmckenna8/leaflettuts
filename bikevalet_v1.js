@@ -1,4 +1,4 @@
-        var valeticon = L.Icon.extend({
+                    var valeticon = L.Icon.extend({
             	options: {
                                    iconSize: [32,37],
                                    iconAnchor: [15,18.5],
@@ -53,67 +53,17 @@
 		    console.log(coords);
 		    
 
-		   
+		   //This is where I'm adding stuff to my table of clickable links.
 		    $("#featurelist table").append('<tr><td><a href="#" onclick="map._layers['+id+'].openPopup(); map.setView(['+lat+', '+lng+'], 16); return false;">'+name+'</a></td></tr>');
 			// Add features to zoom dropdown
 			options += '<option value="' + lng + "," + lat + '", id="' + id + '">' + name + '</option>';
 		});
       	$("#zoom").html(options);
       	
-      	// Function call by "zoom" dropdown onSelect
-		function zoomToFeature (state, coords, id) {
-			if (state === "Select a Feature") {
-				map.fitBounds(geojson.getBounds());
-			}
-			else {
-				lnglat = coords.split(",");
-				map.setView([lnglat[1], lnglat[0]],16);
-				map._layers[id].openPopup();
-			};
-		}
-            /*              
-            // where I want to rock my new way to do links to events from http://projects.bryanmcbride.com/leaflet/geojson_hacks.html#
-            // Loop through the geojson features and extract bbox and name, then add the options to the "zoom" select and build autocomplete(using jquery) 
-      	var options = '<option value="Select a Feature">Select a Feature</option>';
-      	var features = [];
-		geojson.eachLayer(function (layer) {
-		    var id = layer._leaflet_id;
-			var name = layer.feature.properties.Bike_Valet;
-			var coords = layer.feature.geometry.coordinates;
-			var lng = layer.feature.geometry.coordinates[0];
-			var lat = layer.feature.geometry.coordinates[1];
-			
-			
-			// Populate features array and build autocomplete
-			features.push({id: id, label: name, value: name, lat: lat, lng: lng});
-			$( "#search" ).autocomplete({
-				source: features,
-				minLength: 3,
-				select: function( event, ui ) {
-					map.setView([ui.item.lat, ui.item.lng], 18);
-					map._layers[ui.item.id].openPopup();
-					console.log(features);
-				}
-			});
-			// Populate sidebar table with clickable feature links
-			$("#featurelist table").append('<tr><td><a href="#" onclick="map._layers['+id+'].openPopup(); return false;">'+name+'</a></td></tr>');
-			// Add features to zoom dropdown
-			options += '<option value="' + lng + "," + lat + '", id="' + id + '">' + name + '</option>';
-			
-            });
-            $("#zoom").html(options);
-            
-              */      
-            function centermap(){
-            	        map.setView([37.75, -122.45], 12)
-                }
-            function giantsvalet(){
-               map.setView([37.77796, -122.38885], 17)
-               }
-         	function winterfest(){
-         	map.setView([ 37.78306, -122.40538 ], 16)
-         		}
-         	 function warmPlanet(){
-         	map.setView([  37.77451, -122.39757 ], 16)
-         		}
-            
+
+		//My Button Fuctions
+             function centermap(){
+               
+              map.setView([37.75, -122.45], 12)
+              
+                }   
