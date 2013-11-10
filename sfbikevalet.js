@@ -60,9 +60,9 @@
 		});
       	$("#zoom").html(options);
       	
-      	// Function call by "zoom" dropdown onSelect
+      	// Function call by "zoom" dropdown onSelect  really need to fix this so that I don't have this stupdity of if that will never really be true.
 		function zoomToFeature (state, coords, id) {
-			if (state === "Select a Feature") {
+			if (name === "Select a Feature") {
 				map.fitBounds(geojson.getBounds());
 			}
 			else {

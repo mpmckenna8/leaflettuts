@@ -60,7 +60,18 @@
 		});
       	$("#zoom").html(options);
       	
-
+      	// Function call by "zoom" dropdown onSelect
+		function zoomToFeature (state, coords, id) {
+			if (state === "Select a Feature") {
+				map.fitBounds(geojson.getBounds());
+			}
+			else {
+				lnglat = coords.split(",");
+				map.setView([lnglat[1], lnglat[0]],16);
+				map._layers[id].openPopup();
+			};
+		}
+		
 		//My Button Fuctions
              function centermap(){
                

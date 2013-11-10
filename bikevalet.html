@@ -19,14 +19,18 @@
         <link rel="stylesheet" href="valetstyle.css" />
         
     </head>
+    
+    
     <body>
  
        <header> <h1 class="header">San Francisco Bicycle Valet Map</h1></header>
-       
-       
-       
+              
        
        <p><select id="zoom" onchange="zoomToFeature(this.options[this.selectedIndex].text, this.value, this.options[this.selectedIndex].id)"></select></p>
+              </br>
+           <div class="buttons">       
+       <button type="button" onclick="centermap()">Center on SF mainland</button>
+       		</div>
 	
        <!-- The automatically populated list of events should done show up in this table  -->
        <div id="featurelist">
@@ -44,6 +48,7 @@
        </br>
            <div class="buttons">       
        <button type="button" onclick="centermap()">Center on SF mainland</button>
+       		</div>
        </br> 
        
        
