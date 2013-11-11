@@ -4,7 +4,7 @@ body{
 	
 select {
 	z-index:3;
-	margin-left:12%;
+	margin-left:5px;
 	margin-top:10px;
 }
 
@@ -79,15 +79,21 @@ content {
 }
 
 button{
-	margin-top:15px;
+	margin-top:-22px;
 	margin-right:15px;
 	z-index:2;
+	margin-left:330px;
+	float:left;
+}
+
+select{
+	margin-left:12%;
 }
 .buttons{
 	z-index:3;
 	margin-top:15px;
 	float:left;
-	margin-top:600px;
+		
 	margin-right:20px;
 	
 	
