@@ -2,14 +2,17 @@ var valetlocations = {
     "type": "FeatureCollection",
     
     "features": [
+                     { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7-8:05 pm, maybe not on some holidays."], "Times": ["7 am if someone needs them to wait for their bike!", ["5oclock","7oclock"]] }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }
+                     ,
+   
                  { "type": "Feature", "id": 0, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
-                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Events coming up: ", " UCSF Discovery Day: 11\/2\/2013 10:30 am-5 pm", " Snowbomb Ski Festival: Sat 11\/09\/2013 and Sun 11\/10\/2013"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
+                 "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Now offseason but there're still events coming up: ", " Dreamforce Gala"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
                  ,
-
+  /*  
                  { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero- Pier 23", "Capacity": 100,
                  "Dates": ["10 AM - 7PM 01\/09\/2013", "02\/09\/2013", "03\/09\/2013", "04\/09\/2013"], "Times": "1000-1900" }, "geometry": { "type": "Point", "coordinates": [ -122.399621550709114, 37.804334682534055 ] } }
                  ,
-               /*  
+              
                                 { "type": "Feature", "id": 1, "properties": { "id": 2, "Bike_Valet": "America's Cup Marina Green",
                  "Capacity": 100, "Dates": ["10 AM - 7PM 01\/09\/2013", " 02\/09\/2013", " 03\/09\/2013", " 04\/09\/2013"], "Times": ["1000-1900"] }, "geometry": { "type": "Point", "coordinates": [ -122.43507, 37.80633  ] } }
                  ,
@@ -34,7 +37,7 @@ var valetlocations = {
                  ,                
                  
                  { "type": "Feature", "id": 13, "properties": { "id": 13, "Bike_Valet": "Bike+Design", "Capacity": 100, "Dates": ["09\/27\/2013 7-10 pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.40492, 37.77781 ] } }
-                 ,      */            
+                 ,                
                  { "type": "Feature", "id": 13, "properties": { "id": 13, "Bike_Valet": "Folsom St Fair", "Capacity": 100, "Dates": ["09\/29\/2013 11am - 6pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.40926, 37.77433 ] } }
                  ,                   
                                   { "type": "Feature", "id": 12, "properties": { "id": 12, "Bike_Valet": "Now and Zen", "Capacity": 100, "Dates": ["09\/29\/2013 10am - 6pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.45741, 37.76998 ] } }
@@ -42,14 +45,22 @@ var valetlocations = {
          { "type": "Feature", "id": 15, "properties": { "id": 15, "Bike_Valet": "RoadWorks", "Capacity": 100, "Dates": ["09\/29\/2013 10:30am - 4:30pm."], "Times": "7 am if someone needs them to wait for their bike!" }, "geometry": { "type": "Point", "coordinates": [ -122.40244, 37.76538 ] } }          
                  ,
                  
-                 { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7-8:05 pm, maybe not on some holidays."], "Times": ["7 am if someone needs them to wait for their bike!", ["5oclock","7oclock"]] }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }
+
                  
-                 ,
+             
                                                     { "type": "Feature", "id": 16, "properties": { "id": 16, "Bike_Valet": "Winter Fest", "Capacity": 100, "Dates": ["11\/3\/2013"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.40538, 37.78306 ] } }
                  , 
-        { "type": "Feature", "id": 17, "properties": { "id": 17, "Bike_Valet": "Crissy Field Broadcast", "Capacity": 100, "Dates": ["Sat 10\/26\/2013 9 am - 6 pm, ", "Sun 10\/26\/2013 11 am - 2 pm"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.46576, 37.803 ] } }
+        { "type": "Feature", "id": 20, "properties": { "id": 17, "Bike_Valet": "Crissy Field Broadcast", "Capacity": 100, "Dates": ["Sat 10\/26\/2013 9 am - 6 pm, ", "Sun 10\/26\/2013 11 am - 2 pm"], "Times": "Maybe 1800-2230" }, "geometry": { "type": "Point", "coordinates": [  -122.46576, 37.803 ] } }
                          , 
         { "type": "Feature", "id": 17, "properties": { "id": 17, "Bike_Valet": "US Half Marathon", "Capacity": 100, "Dates": ["Sun 11\/03\/2013 6 am - 10:30 am"], "Times": "Maybe 0600-1030" }, "geometry": { "type": "Point", "coordinates": [  -122.42126, 37.80761 ] } }
+        ,
+//still need to fix coordinates
+ */ 
+                { "type": "Feature", "id": 18, "properties": { "id": 17, "Bike_Valet": "Greenpeace Ship Tour", "Capacity": 100, "Dates": ["Sun 11\/17\/2013 6 am - 10:30 am"], "Times": "Maybe 0600-1030" }, "geometry": { "type": "Point", "coordinates": [  -122.40, 37.802493 ] } }
+
+        
+        
+        
                  ]
 }
 
