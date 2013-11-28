@@ -5,9 +5,10 @@ var valetlocations = {
                      { "type": "Feature", "id": 100, "properties": { "id": 100, "Bike_Valet": "Warm Planet", "Capacity": 100, "Dates": ["Mon-Fri 7 am - 8:05 pm, maybe not on some holidays."], "Times": ["7 am if someone needs them to wait for their bike!", ["5oclock","7oclock"]] }, "geometry": { "type": "Point", "coordinates": [ -122.39757, 37.77451 ] } }
                      ,
    
-                 { "type": "Feature", "id": 0, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
+                 { "type": "Feature", "id": 1, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
                  "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Now offseason but there're still events coming up: ", " Dreamforce Gala"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
-                 ,
+                 
+  
   /*  
                  { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero- Pier 23", "Capacity": 100,
                  "Dates": ["10 AM - 7PM 01\/09\/2013", "02\/09\/2013", "03\/09\/2013", "04\/09\/2013"], "Times": "1000-1900" }, "geometry": { "type": "Point", "coordinates": [ -122.399621550709114, 37.804334682534055 ] } }
@@ -55,12 +56,23 @@ var valetlocations = {
         { "type": "Feature", "id": 17, "properties": { "id": 17, "Bike_Valet": "US Half Marathon", "Capacity": 100, "Dates": ["Sun 11\/03\/2013 6 am - 10:30 am"], "Times": "Maybe 0600-1030" }, "geometry": { "type": "Point", "coordinates": [  -122.42126, 37.80761 ] } }
         ,
 //still need to fix coordinates
- */ 
+
                 { "type": "Feature", "id": 18, "properties": { "id": 17, "Bike_Valet": "Greenpeace Ship Tour", "Capacity": 100, "Dates": ["Sun 11\/17\/2013 6 am - 10:30 am"], "Times": "Maybe 0600-1030" }, "geometry": { "type": "Point", "coordinates": [  -122.40, 37.802493 ] } }
 
-        
-        
-        
+              */                 ,
+
+            { "type": "Feature", "id": 23, "properties": { "id": 23, "Bike_Valet": "ArtCrank", "Capacity": 100,
+            "Dates": ["12\/06\/2013 at 5:15 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [  -122.406427860,
+          37.771087892 ] } }
+                 ,            
+                 
+         { "type": "Feature", "id": 22, "properties": { "id": 25, "Bike_Valet": "A.C.T. Christmas Carol", "Capacity": 30,
+                 "Dates": ["12\/06\/2013 at 5:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [   -122.40885257720946, 37.78709783546514 ] } }
+                 ,
+         { "type": "Feature", "id": 21, "properties": { "id": 24, "Bike_Valet": "SFBC Winter", "Capacity": 100,
+                 "Dates": ["12\/10\/2013 at 6:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.39739418029785, 37.78534267732514 ] } }
+                 ,
+                 
                  ]
 }
 
