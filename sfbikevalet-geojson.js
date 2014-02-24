@@ -74,18 +74,34 @@ var valetlocations = {
          { "type": "Feature", "id": 21, "properties": { "id": 24, "Bike_Valet": "SFBC Winter", "Capacity": 100,
                  "Dates": ["12\/10\/2013 at 6:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.39739418029785, 37.78534267732514 ] } }
    
-    */
+   
                  ,
                  { "type": "Feature", "id": 25, "properties": { "id": 26, "Bike_Valet": "AirBNB Block Party", "Capacity": 100,
                  "Dates": ["2\/08\/2013 at 5:00-9 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.40974, 37.77641 ] } }
                  ,
                  { "type": "Feature", "id": 28, "properties": { "id": 29, "Bike_Valet": "ACT (Theatre) to see Napoli!", "Capacity": 100,
                  "Dates": ["2\/12\/2013 at 5:00-9 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.40885257720946, 37.78709783546514 ] } }
+    */
+                 
                  ,
-                 { "type": "Feature", "id": 25, "properties": { "id": 26, "Bike_Valet": "Embarcadero Sunday Streets", "Capacity": 100,
-                 "Dates": ["3\/09\/2013 at 10:30 AM- 4:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.410504, 37.808161 ] } },
-                 { "type": "Feature", "id": 25, "properties": { "id": 26, "Bike_Valet": "ACT: Venus in Fur", "Capacity": 100,
-                 "Dates": ["3\/19\/2014 at 5:00-9 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.40885257720946, 37.78709783546514 ] } }
+                
+                 { "type": "Feature", "id": 29, "properties": { "id": 29, "Bike_Valet": "Embarcadero Sunday Streets", "Capacity": 100,
+                 "Dates": ["3\/09\/2014 at 10:30 AM- 4:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.410504, 37.808161 ] } },
+                 
+                  //Still need to fix up these next 2
+                 
+                 { "type": "Feature", "id": 26, "properties": { "id": 26, "Bike_Valet": "Bicycle Anti Theft Workshop", "Capacity": 100,
+                 "Dates": ["3\/09\/2014 at 5:30 PM- 8:30 PM"], "Times": "1730," }, "geometry": { "type": "Point", "coordinates": [  -122.41699576377867,
+                                                                                                                                  37.77661714214955 ] } },
+                 
+                 { "type": "Feature", "id": 35, "properties": { "id": 35, "Bike_Valet": "Recology Film Screening", "Capacity": 100,
+                 "Dates": ["3\/18\/2014 at 4:30 PM- 8:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [  -122.39989399909973,
+                                                                                                                                  37.77007019461927 ] } },
+                 
+                 
+                 { "type": "Feature", "id": 25, "properties": { "id": 25, "Bike_Valet": "ACT: Venus in Fir", "Capacity": 100,
+                 "Dates": ["3\/19\/2014 at 5:00-9 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.40885257720946, 37.78709783546514 ] } },
+                 
                  
                  
                  ]
