@@ -91,7 +91,7 @@ var valetlocations = {
                   //Still need to fix up these next 2
                  
                  { "type": "Feature", "id": 26, "properties": { "id": 26, "Bike_Valet": "Bicycle Anti Theft Workshop", "Capacity": 100,
-                 "Dates": ["3\/09\/2014 at 5:30 PM- 8:30 PM"], "Times": "1730," }, "geometry": { "type": "Point", "coordinates": [  -122.41699576377867,
+                 "Dates": ["3\/13\/2014 at 5:30 PM- 8:30 PM"], "Times": "1730," }, "geometry": { "type": "Point", "coordinates": [  -122.41699576377867,
                                                                                                                                   37.77661714214955 ] } },
                  
                  { "type": "Feature", "id": 35, "properties": { "id": 35, "Bike_Valet": "Recology Film Screening", "Capacity": 100,
