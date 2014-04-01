@@ -76,8 +76,6 @@ var valeticon = L.Icon.extend({
 		}
 
 		//My Button Fuctions
-             function centermap(){
-
-              map.setView([37.75, -122.45], 12)
-
+      function centermap(){
+          map.setView([37.75, -122.45], 12)
                 }
