@@ -102,7 +102,7 @@ var valetlocations = {
                  { "type": "Feature", "id": 25, "properties": { "id": 25, "Bike_Valet": "ACT: Venus in Fir", "Capacity": 100,
                  "Dates": ["3\/19\/2014 at 5:00-9 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.40885257720946, 37.78709783546514 ] } },
 
-                 */
+
                  ,
                  { "type": "Feature", "id": 35, "properties": { "id": 35, "Bike_Valet": "BioBlitz Crissy Field East Beach", "Capacity": 100,
                  "Dates": ["3\/28\/2014 and 3\/29\/2014 at 8:30 AM- 5:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [     -122.45005130767822,
@@ -123,7 +123,17 @@ var valetlocations = {
 
 { "type": "Feature", "id": 55, "properties": { "id": 55, "Bike_Valet": "King's Day", "Capacity": 75,
 "Dates": ["4\/26\/2014 at 10:30 AM-6:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [  -122.50877022743224,
-          37.76555823017286 ] } },
+          37.76555823017286 ] } }
+          */
+
+          ,
+          { "type": "Feature", "id": 56, "properties": { "id": 56, "Bike_Valet": "Google I/O", "Capacity": 75,
+          "Dates": ["6\/24\/2014 at 2:00 PM-8:00 PM, 6\/25\/2014 at 7:00 AM-10:30 PM, 6\/26\/2014 from 7:00 AM-5:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates":
+          [
+          -122.40319311618805,
+          37.783417890768426
+        ] } }
+
 
                  ]
 }
