@@ -124,7 +124,7 @@ var valetlocations = {
 { "type": "Feature", "id": 55, "properties": { "id": 55, "Bike_Valet": "King's Day", "Capacity": 75,
 "Dates": ["4\/26\/2014 at 10:30 AM-6:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [  -122.50877022743224,
           37.76555823017286 ] } }
-          */
+
 
           ,
           { "type": "Feature", "id": 56, "properties": { "id": 56, "Bike_Valet": "Google I/O", "Capacity": 75,
@@ -133,6 +133,14 @@ var valetlocations = {
           -122.40319311618805,
           37.783417890768426
         ] } }
+        */
+        ,
+
+        { "type": "Feature", "id": 38, "properties": { "id": 38, "Bike_Valet": "Exploratorium After Dark", "Capacity": 100,
+        "Dates": ["7\/3\/2014 at 6:00 PM- 10:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [
+          -122.3988425731659,
+          37.80117998642249
+        ] } },
 
 
                  ]
