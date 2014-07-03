@@ -142,6 +142,12 @@ var valetlocations = {
           37.80117998642249
         ] } },
 
+        { "type": "Feature", "id": 39, "properties": { "id": 39, "Bike_Valet": "Golden Wheel Awards", "Capacity": 100,
+        "Dates": ["7\/3\/2014 at 6:00 PM- 9:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [
+          -122.38828539848328,
+          37.78695369361412
+        ] } },
+
 
                  ]
 }
