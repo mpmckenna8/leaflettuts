@@ -143,11 +143,18 @@ var valetlocations = {
         ] } },
 
         { "type": "Feature", "id": 39, "properties": { "id": 39, "Bike_Valet": "Golden Wheel Awards", "Capacity": 100,
-        "Dates": ["7\/3\/2014 at 6:00 PM- 9:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [
+        "Dates": ["7\/15\/2014 at 6:00 PM- 9:30 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [
           -122.38828539848328,
           37.78695369361412
         ] } },
 
+{ "type": "Feature", "id": 68, "properties": { "id": 68, "Bike_Valet": "Exploratorium After Dark", "Capacity": 100,
+"Dates": ["7\/18\/2014 at 5:00 PM- 8:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates":
+[
+          -122.39031314849854,
+          37.73588436067144
+        ]
+ } },
 
                  ]
 }
