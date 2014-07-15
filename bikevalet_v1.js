@@ -30,9 +30,9 @@ var valeticon = L.Icon.extend({
                     }
                 }
 
-            var geojson = L.geoJson(valetlocations, {
+      var geojson = L.geoJson(valetlocations, {
 
-                    pointToLayer: function (feature, latlng){
+            pointToLayer: function (feature, latlng){
                     if(feature.properties.id<100){
                     return L.marker(latlng, {icon: sfbikeicon});}
                     else{
@@ -40,9 +40,11 @@ var valeticon = L.Icon.extend({
                           }
                           },
                            onEachFeature: onEachFeature
-                          }).addTo(map)
+                  }).addTo(map)
 
-                linky = []
+
+
+            linky = []
                 var options = '<option value="Select a Feature">Select a Feature</option>';
                 geojson.eachLayer(function (layer) {
 		    var id = layer._leaflet_id;
@@ -61,11 +63,14 @@ var valeticon = L.Icon.extend({
 			// Add features to zoom dropdown
 			options += '<option value="' + lng + "," + lat + '", id="' + id + '">' + name + '</option>';
 		});
+
+
+
       	$("#zoom").html(options);
 
       	// Function call by "zoom" dropdown onSelect
-		function zoomToFeature (state, coords, id) {
-			if (state === "Select a Feature") {
+		function zoomToFeature (valet, coords, id) {
+			if (valet === "Select a Feature") {
 				map.fitBounds(geojson.getBounds());
 			}
 			else {
