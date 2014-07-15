@@ -148,7 +148,7 @@ var valetlocations = {
           37.78695369361412
         ] } },
 
-{ "type": "Feature", "id": 68, "properties": { "id": 68, "Bike_Valet": "Exploratorium After Dark", "Capacity": 100,
+{ "type": "Feature", "id": 68, "properties": { "id": 68, "Bike_Valet": "Third on 3rd", "Capacity": 100,
 "Dates": ["7\/18\/2014 at 5:00 PM- 8:00 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates":
 [
           -122.39031314849854,
