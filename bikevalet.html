@@ -5,66 +5,66 @@
     <head>
         <title>Bike Valet Map</title>
         <meta name="viewport" content="width=device-width">
-        <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+ <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
         <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
-        
+
         <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"> </script>
-        
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
             </script>
 
 
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css" />
         <link rel="stylesheet" href="valetstyle.css" />
-        
+
     </head>
-    
-    
+
+
     <body>
- 
+
        <header> <h1 class="header">San Francisco Bicycle Valet Map</h1></header>
-              
-       
+
+
        <p><select id="zoom" onchange="zoomToFeature(this.options[this.selectedIndex].text, this.value, this.options[this.selectedIndex].id)"></select></p>
               </br>
-           <div class="buttons">       
+           <div class="buttons">
        <button type="button" onclick="centermap()">Center on SF mainland</button>
        		</div>
-	
+
        <!-- The automatically populated list of events should done show up in this table  -->
        <div id="featurelist">
 		<table></table>
 	</div>
-       
-       
-       
-       
+
+
+
+
 
     </div>
     	<!-- this is where my map I'll be getting from Stamen is on the page  -->
         <div id="toner" class="map"></div>
        <!-- <div id="watercolor" class="map"></div>  -->
 
-       </br> 
-       
-       
+       </br>
+
+
 <content>
 <div class="writin">
         <p>So far I'm just working on a doing <a href="http://www.sfbike.org/?valet">San Francisco Bicycle Coalition bike valet</a> events and Warm Planets valet on the map. Have the data for the map in geoJSON with all the dates in an array. Was gonna work on having popup dialogues with dynamic text according the the date and time. Still need a good system for adding new data to the set. Though just creating a new feature really isn't too time consuming for now and I can edit the raw data...</p>
-            
+
         <p>Also check out the <a href="http://www.sfbike.org/?chain">San Francisco Bicycle Coalition's chain of events</a> which lists a bunch of SF's bike happenings, though there are plenty not on there.'</p>
-        
+
         <p>Here's the <a href="http://mpmckenna8.github.io/leaflettuts/bikevalet_v2.html">development page </a>where I'm practicing some new stuff to maybe add to this map. Plus you can check out the code for this page and make it better at this <a href="https://github.com/mpmckenna8/leaflettuts/tree/gh-pages">Github Repo.</a></p>
         </div>
-        
+
         </content>
         <footer><p>
         Back to <a href="http://mpmckenna8.github.io/">my vanity site</a>
         </p>
         </footer>
 
-        
+
         <script src="sfbikevalet-geojson.js" type="text/javascript"></script>
         <script type="text/javascript" src="bikevalet_v1.js"></script>
     </body>

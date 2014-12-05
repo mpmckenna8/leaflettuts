@@ -10,8 +10,8 @@ var valetlocations = {
                  { "type": "Feature", "id": 1, "properties": { "id": 1, "Bike_Valet": "Giants", "Capacity": 200,
                  "Dates": ["At all Giants home games and some events. Ideally in operation two hours Before the National Anthem. Now offseason but there're still events coming up: ", " Dreamforce Gala"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.38885, 37.77796 ] } }
 
+   /*
 
-  /*
                  { "type": "Feature", "id": 2, "properties": { "id": 3, "Bike_Valet": "America's Cup Embarcadero- Pier 23", "Capacity": 100,
                  "Dates": ["10 AM - 7PM 01\/09\/2013", "02\/09\/2013", "03\/09\/2013", "04\/09\/2013"], "Times": "1000-1900" }, "geometry": { "type": "Point", "coordinates": [ -122.399621550709114, 37.804334682534055 ] } }
                  ,
@@ -133,7 +133,13 @@ var valetlocations = {
           -122.40319311618805,
           37.783417890768426
         ] } }
-        */
+
+
+
+
+
+
+
         ,
 
         { "type": "Feature", "id": 38, "properties": { "id": 38, "Bike_Valet": "Exploratorium After Dark", "Capacity": 100,
@@ -155,6 +161,20 @@ var valetlocations = {
           37.73588436067144
         ]
  } },
+
+ */
+
+ ,
+ { "type": "Feature", "id": 28, "properties": { "id": 29, "Bike_Valet": "Bike to Theater at ACT", "Capacity": 100,
+ "Dates": ["12\/5\/2014 at 5:00-9 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.40885257720946, 37.78709783546514 ] } }
+
+,
+{ "type": "Feature", "id": 28, "properties": { "id": 29, "Bike_Valet": "Beans, Brews and Bikes", "Capacity": 100,
+"Dates": ["12\/6\/2014 at 5:00-9 PM"], "Times": "1700," }, "geometry": { "type": "Point", "coordinates": [ -122.438924, 37.779419,  ] } }
+
+
+
+
 
                  ]
 }
